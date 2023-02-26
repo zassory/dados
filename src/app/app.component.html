@@ -1,8 +1,11 @@
 <div class="jumbotron text-center">
-  <button class="btn btn-success btn-lg">
+  <button 
+    class="btn btn-success btn-lg"
+    (click)="tirarDados()"
+  >
     Tirar dados
   </button>
   <br>
-  <img class="img" src="../assets/img/dice1.png">
-  <img class="img" src="../assets/img/dice4.png">
+  <img class="img" [src]="dadoIzquierda">
+  <img class="img" [src]="dadoDerecha">
 </div>
